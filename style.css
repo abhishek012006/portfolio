@@ -1,0 +1,786 @@
+/* =========================================================
+   1. BASIC RESET
+   ========================================================= */
+
+/* Remove default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Basic body styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #17213b;
+    background-color: white;
+}
+
+
+/* Remove default underline from links */
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   2. NAVBAR
+   ========================================================= */
+
+.navbar {
+    display: flex;
+
+    align-items: center;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 20px 40px;
+
+    gap: 80px;
+}
+
+
+/* Logo */
+
+.logo a {
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #2563eb;
+}
+
+
+/* Navigation links */
+
+.nav-links {
+    display: flex;
+
+    gap: 25px;
+
+    list-style: none;
+}
+
+
+/* Navigation link styling */
+
+.nav-links a {
+    color: #17213b;
+
+    font-size: 16px;
+
+    transition: color 0.3s ease;
+}
+
+
+/* Navigation hover */
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+
+/* =========================================================
+   3. HERO SECTION
+   ========================================================= */
+
+#home {
+    background-color: #eaf4ff;
+
+    padding: 80px 40px;
+}
+
+
+/* Hero layout */
+
+.hero {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+/* Small text above name */
+
+.eyebrow {
+    color: #64748b;
+
+    font-size: 14px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+}
+
+
+/* Main heading */
+
+.hero-content h1 {
+    font-size: 64px;
+
+    color: #172554;
+
+    line-height: 1;
+
+    margin: 15px 0;
+}
+
+
+/* Subtitle */
+
+.hero-content h2 {
+    font-size: 22px;
+
+    color: #334155;
+
+    margin-bottom: 20px;
+}
+
+
+/* Hero description */
+
+.hero-content > p:last-of-type {
+    color: #64748b;
+
+    font-size: 17px;
+
+    max-width: 500px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Hero buttons */
+
+.hero-btns {
+    display: flex;
+
+    gap: 15px;
+}
+
+
+/* General button */
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Button hover */
+
+.btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 18px rgba(37, 99, 235, 0.25);
+}
+
+
+/* Outline button */
+
+.btn-outline {
+    background-color: transparent;
+
+    color: #2563eb;
+
+    border: 2px solid #2563eb;
+}
+
+
+/* =========================================================
+   4. HERO IMAGE
+   ========================================================= */
+
+.hero-image {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.hero-image img {
+    width: 380px;
+
+    height: 380px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 8px solid white;
+
+    box-shadow:
+        0 15px 35px rgba(37, 99, 235, 0.2);
+
+    transition: transform 0.3s ease;
+}
+
+
+/* Image hover */
+
+.hero-image img:hover {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   5. ABOUT SECTION
+   ========================================================= */
+
+#about {
+    padding: 80px 40px;
+
+    background-color: #fff7ed;
+}
+
+
+/* About container */
+
+.about-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+}
+
+
+/* About cards */
+
+.about-me,
+.about-care {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Blue line */
+
+.about-me {
+    border-top: 5px solid #2563eb;
+}
+
+
+/* Orange line */
+
+.about-care {
+    border-top: 5px solid #f97316;
+}
+
+
+/* About headings */
+
+.about-me h2,
+.about-care h2 {
+    font-size: 25px;
+
+    margin-bottom: 20px;
+
+    color: #172554;
+}
+
+
+/* About list */
+
+.about-list {
+    padding-left: 20px;
+}
+
+
+/* About list items */
+
+.about-list li {
+    margin-bottom: 12px;
+
+    color: #475569;
+}
+
+
+/* About card hover */
+
+.about-me:hover,
+.about-care:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   6. SKILLS SECTION
+   ========================================================= */
+
+#skills {
+    padding: 80px 40px;
+
+    background-color: #f0fdf4;
+}
+
+
+/* Skills heading */
+
+#skills > h2 {
+    text-align: center;
+
+    font-size: 36px;
+
+    color: #14532d;
+
+    margin-bottom: 40px;
+}
+
+
+/* =========================================================
+   7. PROGRAMMING LANGUAGES
+   ========================================================= */
+
+.language-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Individual language cards */
+
+.coding_lang {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Language text */
+
+.coding_lang p {
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #166534;
+}
+
+
+/* Language hover */
+
+.coding_lang:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================================================
+   8. FRAMEWORKS / TOOLS / DATABASES
+   ========================================================= */
+
+.skills-grid {
+    max-width: 1100px;
+
+    margin: 40px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* Category cards */
+
+.frameworks,
+.tools,
+.databases {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Category headings */
+
+.frameworks h3,
+.tools h3,
+.databases h3 {
+    color: #166534;
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Category lists */
+
+.frameworks ul,
+.tools ul,
+.databases ul {
+    padding-left: 20px;
+}
+
+
+/* Category list items */
+
+.frameworks li,
+.tools li,
+.databases li {
+    margin-bottom: 8px;
+
+    color: #475569;
+}
+
+
+/* Category hover */
+
+.frameworks:hover,
+.tools:hover,
+.databases:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================================================
+   9. PROJECTS SECTION
+   ========================================================= */
+
+#projects {
+    padding: 80px 40px;
+
+    background-color: #eff6ff;
+}
+
+
+/* Projects heading */
+
+#projects > h2 {
+    text-align: center;
+
+    font-size: 36px;
+
+    color: #172554;
+
+    margin-bottom: 40px;
+}
+
+
+/* Project card */
+
+.projects {
+    max-width: 750px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+
+    border-left: 5px solid #2563eb;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Project title */
+
+.projects h3 {
+    font-size: 26px;
+
+    color: #172554;
+
+    margin-bottom: 15px;
+}
+
+
+/* Project description */
+
+.projects p {
+    color: #64748b;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* Project card hover */
+
+.projects:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   10. EDUCATION SECTION
+   ========================================================= */
+
+#education {
+    padding: 80px 40px;
+
+    background-color: #fff7ed;
+}
+
+
+/* Education heading */
+
+#education > h2 {
+    text-align: center;
+
+    font-size: 36px;
+
+    color: #172554;
+
+    margin-bottom: 40px;
+}
+
+
+/* Education card */
+
+.education-card {
+    max-width: 750px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+
+    border-left: 5px solid #f97316;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Year */
+
+.education-card .year {
+    color: #f97316;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+/* Degree */
+
+.education-card h3 {
+    font-size: 26px;
+
+    color: #172554;
+
+    margin-bottom: 8px;
+}
+
+
+/* College */
+
+.education-card > p:nth-of-type(2) {
+    font-weight: bold;
+
+    color: #334155;
+
+    margin-bottom: 15px;
+}
+
+
+/* Education description */
+
+.education-card > p:last-child {
+    color: #64748b;
+
+    line-height: 1.6;
+}
+
+
+/* Education hover */
+
+.education-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   11. CONTACT SECTION
+   ========================================================= */
+
+#contact {
+    padding: 80px 40px;
+
+    background-color: #f0fdf4;
+}
+
+
+/* Contact container */
+
+.contact {
+    max-width: 750px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+/* Contact heading */
+
+.contact h2 {
+    font-size: 36px;
+
+    color: #14532d;
+
+    margin-bottom: 20px;
+}
+
+
+/* Contact paragraph */
+
+.contact > p {
+    color: #64748b;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+/* Contact list */
+
+.contact-info {
+    list-style: none;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* Contact links */
+
+.contact-info a {
+    color: #2563eb;
+
+    font-weight: bold;
+
+    transition: color 0.3s ease;
+}
+
+
+/* Contact hover */
+
+.contact-info a:hover {
+    color: #1d4ed8;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   12. FOOTER
+   ========================================================= */
+
+footer {
+    background-color: #172554;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px 20px;
+
+    font-size: 14px;
+}
